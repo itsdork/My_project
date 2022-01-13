@@ -62,13 +62,13 @@ def CopyFile():
 
     files_list = root.files_list
     
-    GB = len(files_list)
+    KB = len(files_list)
     download = 0
     speed = 0.08
-    while(download<GB):
-        bar['value']+=(speed/GB)*100
+    while(download<KB):
+        bar['value']+=(speed/KB)*100
         download+=speed
-        percent.set(str(int((download/GB)*100))+'%')
+        percent.set(str(int((download/KB)*100))+'%')
         root.update_idletasks()
         
     root.destination_location = destinationLocation.get()
