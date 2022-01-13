@@ -1,4 +1,4 @@
 # My_project
-starting stage
+started
 #itdork
 
